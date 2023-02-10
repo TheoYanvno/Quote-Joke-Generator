@@ -41,4 +41,3 @@ newQuoteBtn.addEventListener('click', newQuote);
 
 
 getQuotes();
-getLoading();
