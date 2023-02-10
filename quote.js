@@ -2,14 +2,10 @@ const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const quoteAuthor = document.getElementById('author');
 const newQuoteBtn = document.getElementById('new-quote');
-const loader = document.getElementById('loader');
+
 
 let apiQuotes = [];
 
-function complete(){
-    quoteContainer.hidden = false;
-    loader.hidden = true;
-}
 
 function newQuote(){
     const quote= apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
